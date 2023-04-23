@@ -1,13 +1,21 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Header = () => {
   return (
-    <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8">
+    <>
       <Link href="/" className="hover:underline">
-        Blog
+        <Image 
+          src="/assets/llaveritos-page-logo.jpeg"
+          width={200}
+          height={169}
+          alt="Lleveritos Emma"
+          style={{
+            margin: "auto",
+          }}
+        />
       </Link>
-      .
-    </h2>
+    </>
   )
 }
 
