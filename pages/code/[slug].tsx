@@ -44,7 +44,7 @@ export default function Post({ post, morePosts, preview }: Props) {
                 author={post.author}
                 embedded={post.embedded}
               />
-              <PostBody content={post.content} />
+              <PostBody content={post.content} embedded={post.embedded} />
             </article>
           </>
         )}
